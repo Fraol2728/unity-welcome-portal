@@ -1,64 +1,64 @@
-import { Heart, Globe, Users, Shield } from "lucide-react";
-
-const values = [
-  {
-    icon: Heart,
-    title: "Compassion First",
-    description: "We approach every individual with empathy, understanding, and genuine care for their wellbeing.",
-  },
-  {
-    icon: Globe,
-    title: "Cultural Respect",
-    description: "We celebrate diversity and honor the unique backgrounds and traditions of those we serve.",
-  },
-  {
-    icon: Users,
-    title: "Community Building",
-    description: "We create connections that transform strangers into neighbors and neighbors into family.",
-  },
-  {
-    icon: Shield,
-    title: "Safe Haven",
-    description: "We provide a secure, welcoming environment where everyone can feel protected and valued.",
-  },
-];
+import { Target, Eye, Scroll } from "lucide-react";
 
 export function MissionSection() {
   return (
-    <section className="section-padding bg-section-alt">
+    <section className="section-padding bg-background">
       <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-            Our Mission
-          </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Empowering New Beginnings with Dignity and Hope
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            We believe that every person deserves the opportunity to build a fulfilling life. 
-            Our mission is to provide comprehensive support that helps newcomers navigate their journey 
-            while preserving their identity and dignity.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {values.map((value, index) => (
-            <div
-              key={value.title}
-              className="bg-card rounded-2xl p-8 text-center card-hover opacity-0 animate-fade-up"
-              style={{ animationDelay: `${index * 100}ms`, animationFillMode: "forwards" }}
-            >
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <value.icon className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                {value.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {value.description}
-              </p>
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Vision */}
+          <div
+            className="bg-card rounded-2xl p-8 border border-border card-hover opacity-0 animate-fade-up"
+            style={{ animationDelay: "0ms", animationFillMode: "forwards" }}
+          >
+            <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+              <Eye className="w-8 h-8 text-primary" />
             </div>
-          ))}
+            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+              Our Vision
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              A world where every newcomer—regardless of their origin—finds a welcoming community, 
+              access to essential services, and the opportunity to build a safe, dignified, and 
+              fulfilling life. We envision inclusive societies that embrace diversity as strength.
+            </p>
+          </div>
+
+          {/* Mission */}
+          <div
+            className="bg-card rounded-2xl p-8 border border-border card-hover opacity-0 animate-fade-up"
+            style={{ animationDelay: "100ms", animationFillMode: "forwards" }}
+          >
+            <div className="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center mb-6">
+              <Target className="w-8 h-8 text-secondary" />
+            </div>
+            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+              Our Mission
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              To empower refugees, immigrants, and vulnerable individuals to achieve self-sufficiency 
+              and integration through comprehensive settlement support, education, employment guidance, 
+              legal assistance, and community-building programs. We believe everyone deserves the 
+              chance to thrive.
+            </p>
+          </div>
+
+          {/* Mandate */}
+          <div
+            className="bg-card rounded-2xl p-8 border border-border card-hover opacity-0 animate-fade-up"
+            style={{ animationDelay: "200ms", animationFillMode: "forwards" }}
+          >
+            <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
+              <Scroll className="w-8 h-8 text-accent" />
+            </div>
+            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+              Our Mandate
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              To provide holistic, culturally-sensitive services that address the unique needs of 
+              newcomers. We advocate for policies that promote equity and inclusion, and partner 
+              with communities to create lasting positive change in the lives of those we serve.
+            </p>
+          </div>
         </div>
       </div>
     </section>
