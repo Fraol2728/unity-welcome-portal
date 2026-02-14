@@ -7,8 +7,8 @@ const blogPosts = [
   {
     id: 1,
     slug: "welcoming-new-families-summer-2024",
-    title: "Welcoming 50 New Families This Summer",
-    excerpt: "Our community came together to welcome 50 new refugee families from around the world. Read about their inspiring journeys and how you can help.",
+    title: "50 Families Found a New Home This Summer — Here's How",
+    excerpt: "This summer, our community came together to welcome 50 newcomer families from around the world. Their stories of courage and hope remind us why this work matters.",
     category: "Community Stories",
     author: "Sarah Mitchell",
     date: "December 5, 2024",
@@ -17,10 +17,10 @@ const blogPosts = [
   },
   {
     id: 2,
-    slug: "language-program-success-stories",
-    title: "Language Program Celebrates 200 Graduates",
-    excerpt: "Our English language program marked a milestone this month as 200 students graduated. Their stories of perseverance inspire us all.",
-    category: "Program Updates",
+    slug: "language-program-200-graduates",
+    title: "200 Graduates and Counting: Language Program Milestone",
+    excerpt: "Our English language program celebrated a major milestone this month. Meet some of the graduates whose determination and hard work inspired everyone around them.",
+    category: "Youth & Education",
     author: "Maria Santos",
     date: "November 28, 2024",
     readTime: "4 min read",
@@ -28,10 +28,10 @@ const blogPosts = [
   },
   {
     id: 3,
-    slug: "mental-health-awareness-month",
-    title: "Understanding Trauma: Mental Health Resources for Newcomers",
-    excerpt: "Mental health support is crucial for those who have experienced displacement. Learn about our expanded counseling services.",
-    category: "Resources",
+    slug: "mental-health-resources-newcomers",
+    title: "Why Mental Health Matters for Newcomers — And How We Help",
+    excerpt: "Starting over in a new country is exciting but also emotionally challenging. Learn about our expanded counseling services designed for newcomer families and youth.",
+    category: "Newcomer Resources",
     author: "Dr. James Chen",
     date: "November 15, 2024",
     readTime: "7 min read",
@@ -40,9 +40,9 @@ const blogPosts = [
   {
     id: 4,
     slug: "volunteer-spotlight-december",
-    title: "Volunteer Spotlight: Meet the Hearts Behind Our Work",
-    excerpt: "This month we celebrate three exceptional volunteers who have gone above and beyond to serve our community members.",
-    category: "Volunteer Stories",
+    title: "Volunteer Spotlight: The People Who Make It All Possible",
+    excerpt: "This month we celebrate three incredible volunteers who have gone above and beyond. Their dedication to newcomer families is truly inspiring.",
+    category: "Community Stories",
     author: "Ahmed Hassan",
     date: "November 8, 2024",
     readTime: "4 min read",
@@ -50,10 +50,10 @@ const blogPosts = [
   },
   {
     id: 5,
-    slug: "employment-workshop-series",
-    title: "New Workshop Series: Career Success for Newcomers",
-    excerpt: "Starting in January, we are launching a comprehensive workshop series to help newcomers navigate the Canadian job market.",
-    category: "Events",
+    slug: "career-workshop-series-newcomers",
+    title: "New Workshop Series: Building Your Career in Canada",
+    excerpt: "Starting in January, our comprehensive career workshops will help newcomers navigate the Canadian job market with confidence — from resumes to interviews to networking.",
+    category: "Youth & Education",
     author: "James Okonkwo",
     date: "October 30, 2024",
     readTime: "3 min read",
@@ -61,10 +61,10 @@ const blogPosts = [
   },
   {
     id: 6,
-    slug: "community-partners-appreciation",
-    title: "Thank You to Our Community Partners",
-    excerpt: "We could not do this work without our amazing partners. Join us in celebrating the organizations that make our mission possible.",
-    category: "Announcements",
+    slug: "community-partners-thank-you",
+    title: "Thank You to the Partners Who Make Our Work Possible",
+    excerpt: "None of this happens alone. Join us in celebrating the organizations, businesses, and community leaders who help us serve newcomers every day.",
+    category: "Community Stories",
     author: "Sarah Mitchell",
     date: "October 20, 2024",
     readTime: "5 min read",
@@ -72,7 +72,7 @@ const blogPosts = [
   },
 ];
 
-const categories = ["All", "Community Stories", "Program Updates", "Resources", "Volunteer Stories", "Events", "Announcements"];
+const categories = ["All", "Community Stories", "Youth & Education", "Newcomer Resources"];
 
 const Blog = () => {
   return (
@@ -85,11 +85,11 @@ const Blog = () => {
               Our Blog
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Stories, Updates & Resources
+              Stories That Inspire, Updates That Matter
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Stay connected with our community through inspiring stories, program updates, 
-              helpful resources, and event announcements.
+              Real stories from our community, practical resources for newcomers, and updates 
+              on the programs and events that bring us together.
             </p>
           </div>
         </div>
@@ -130,6 +130,7 @@ const Blog = () => {
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">
@@ -168,7 +169,7 @@ const Blog = () => {
           {/* Load More */}
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
-              Load More Articles
+              Load More Stories
             </Button>
           </div>
         </div>
@@ -179,11 +180,11 @@ const Blog = () => {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">
-              Stay Updated
+              Stay Connected With Our Community
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Subscribe to our newsletter to receive the latest stories, event announcements, 
-              and resources directly in your inbox.
+              Get inspiring stories, event invitations, and helpful resources delivered to 
+              your inbox — no spam, just the good stuff.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input

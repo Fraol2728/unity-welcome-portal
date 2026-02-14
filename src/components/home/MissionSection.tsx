@@ -13,13 +13,13 @@ export function MissionSection() {
             <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
               <Eye className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-2xl font-bold text-foreground mb-4">
               Our Vision
-            </h3>
+            </h2>
             <p className="text-muted-foreground leading-relaxed">
-              A world where every newcomer—regardless of their origin—finds a welcoming community, 
-              access to essential services, and the opportunity to build a safe, dignified, and 
-              fulfilling life. We envision inclusive societies that embrace diversity as strength.
+              A united and inclusive Canada where diverse communities thrive together 
+              with dignity and respect — where your background is celebrated and your 
+              future is full of possibility.
             </p>
           </div>
 
@@ -31,14 +31,13 @@ export function MissionSection() {
             <div className="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center mb-6">
               <Target className="w-8 h-8 text-secondary" />
             </div>
-            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-2xl font-bold text-foreground mb-4">
               Our Mission
-            </h3>
+            </h2>
             <p className="text-muted-foreground leading-relaxed">
-              To empower refugees, immigrants, and vulnerable individuals to achieve self-sufficiency 
-              and integration through comprehensive settlement support, education, employment guidance, 
-              legal assistance, and community-building programs. We believe everyone deserves the 
-              chance to thrive.
+              To empower and support multicultural communities in Canada through inclusion, 
+              cultural pride, equal opportunity, and meaningful engagement — because everyone 
+              deserves a fair chance to thrive.
             </p>
           </div>
 
@@ -50,13 +49,13 @@ export function MissionSection() {
             <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
               <Scroll className="w-8 h-8 text-accent" />
             </div>
-            <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-              Our Mandate
-            </h3>
+            <h2 className="font-display text-2xl font-bold text-foreground mb-4">
+              Our Commitment
+            </h2>
             <p className="text-muted-foreground leading-relaxed">
-              To provide holistic, culturally-sensitive services that address the unique needs of 
-              newcomers. We advocate for policies that promote equity and inclusion, and partner 
-              with communities to create lasting positive change in the lives of those we serve.
+              We deliver culturally-responsive programs that meet people where they are — 
+              advocating for equity, partnering with communities, and creating real, 
+              lasting change in the lives of newcomers and families across Canada.
             </p>
           </div>
         </div>

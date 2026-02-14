@@ -13,11 +13,11 @@ export function CTASection() {
 
           <div className="relative px-8 py-16 md:px-16 md:py-20 text-center">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-foreground mb-6">
-              Join Us in Making a Difference
+              Be Part of Something Meaningful
             </h2>
             <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto mb-8">
-              Whether you want to donate, volunteer, or simply learn more about our work, 
-              there are many ways to support our mission and help transform lives.
+              Whether you'd like to volunteer, donate, or simply connect with us — there's 
+              a place for you here. Together, we can build a more inclusive Canada.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="xl" asChild>
@@ -27,7 +27,7 @@ export function CTASection() {
                 </Link>
               </Button>
               <Button variant="outline" size="xl" className="border-foreground/30 hover:bg-foreground/10" asChild>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Talk to Us</Link>
               </Button>
             </div>
           </div>

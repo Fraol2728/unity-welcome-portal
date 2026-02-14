@@ -6,80 +6,80 @@ import { Button } from "@/components/ui/button";
 const services = [
   {
     icon: Home,
-    title: "Settlement Assistance",
-    shortDesc: "Housing support and essential resources for newcomers",
-    fullDesc: "We help newcomers find safe, affordable housing and navigate the essentials of settling into a new community. Our settlement workers provide one-on-one support with finding accommodation, setting up utilities, accessing healthcare, and understanding local systems and services.",
+    title: "Settlement & Orientation",
+    shortDesc: "Your first steps in a new community, made easier",
+    fullDesc: "Starting fresh in a new country can feel overwhelming. We're here to help you navigate the basics — from finding safe, affordable housing to understanding how local services work. Our settlement workers provide one-on-one guidance so you never have to figure it out alone.",
     features: [
-      "Housing search assistance and referrals",
-      "Orientation to local services and resources",
-      "Help with opening bank accounts",
-      "Public transit navigation",
-      "School registration for children",
+      "Help finding housing and understanding leases",
+      "Orientation to local services, transit, and healthcare",
+      "Support with opening bank accounts and setting up essentials",
+      "School registration guidance for children",
+      "Connection to community resources near you",
     ],
   },
   {
     icon: BookOpen,
     title: "Language & Skills Training",
-    shortDesc: "English classes and vocational programs",
-    fullDesc: "Language is the key to integration. Our comprehensive language programs help newcomers gain confidence in English while also developing valuable job skills. We offer classes at all levels, from complete beginners to advanced professional English.",
+    shortDesc: "Build confidence through language and learning",
+    fullDesc: "Language opens doors — to jobs, friendships, and everyday independence. Our programs meet you at your level and help you grow at your own pace. Whether you're just starting out or want to strengthen your professional English, we've got a class for you.",
     features: [
-      "ESL classes for all proficiency levels",
-      "Workplace language training",
-      "Computer literacy programs",
+      "English classes for beginners through advanced learners",
+      "Workplace-focused language training",
+      "Computer literacy and digital skills programs",
       "Job-specific skills workshops",
-      "Credential recognition support",
+      "Support with credential recognition in Canada",
     ],
   },
   {
     icon: Users,
     title: "Community Integration Programs",
-    shortDesc: "Cultural events and community building",
-    fullDesc: "Building connections is essential for feeling at home. Our community programs create opportunities for newcomers to meet their neighbors, learn about local culture, and share their own traditions. We believe that integration is a two-way process that enriches everyone.",
+    shortDesc: "Find your people and feel at home",
+    fullDesc: "Belonging isn't just about where you live — it's about who you know and how connected you feel. Our community programs create real opportunities to meet neighbours, share your culture, and build friendships that make Canada feel like home.",
     features: [
-      "Cultural orientation workshops",
-      "Community mentorship matching",
-      "Social and recreational activities",
-      "Multicultural festivals and events",
-      "Volunteer opportunities",
+      "Cultural orientation and exchange workshops",
+      "One-on-one community mentorship matching",
+      "Social events, outings, and recreational activities",
+      "Multicultural festivals and community celebrations",
+      "Volunteer opportunities to give back and connect",
     ],
   },
   {
     icon: FileText,
     title: "Legal & Documentation Support",
-    shortDesc: "Immigration guidance and paperwork assistance",
-    fullDesc: "Navigating immigration systems can be overwhelming. Our team provides guidance on documentation, helps with paperwork, and connects individuals with legal professionals when needed. We ensure that everyone understands their rights and options.",
+    shortDesc: "Navigate paperwork with confidence",
+    fullDesc: "Immigration systems are complex, and the paperwork can feel endless. Our team helps you understand your options, organize your documents, and connect with trusted legal professionals when you need them. You don't have to do this alone.",
     features: [
-      "Immigration document assistance",
-      "Status application support",
-      "Legal rights education",
-      "Referrals to immigration lawyers",
-      "Form completion assistance",
+      "Immigration document preparation and review",
+      "Status and application support",
+      "Know-your-rights education sessions",
+      "Referrals to trusted immigration lawyers",
+      "Assistance completing forms and applications",
     ],
   },
   {
     icon: Heart,
-    title: "Mental Health & Wellness",
-    shortDesc: "Counseling and emotional support services",
-    fullDesc: "The journey of displacement can take a significant toll on mental health. Our culturally-sensitive counseling services provide a safe space for individuals and families to process their experiences, build resilience, and work toward healing.",
+    title: "Wellness & Mental Health",
+    shortDesc: "Healing, resilience, and emotional support",
+    fullDesc: "The journey of starting over can take a real toll on your wellbeing. Our culturally-sensitive counseling services offer a safe, judgment-free space to process your experiences, build resilience, and find strength — for yourself and your family.",
     features: [
-      "Individual counseling sessions",
-      "Family therapy services",
-      "Support groups for trauma survivors",
+      "Individual and family counseling",
+      "Support groups for shared experiences",
       "Youth mental health programs",
-      "Wellness workshops and activities",
+      "Wellness workshops and stress-relief activities",
+      "Trauma-informed care approaches",
     ],
   },
   {
     icon: Briefcase,
-    title: "Employment Services",
-    shortDesc: "Job search support and career development",
-    fullDesc: "Finding meaningful employment is often a top priority for newcomers. Our employment team provides comprehensive support from resume building to job placement, helping individuals find work that matches their skills and experience.",
+    title: "Employment & Career Support",
+    shortDesc: "Find meaningful work that matches your skills",
+    fullDesc: "Getting a job in a new country means learning new systems, networks, and expectations. Our employment team supports you from resume writing to interview prep to job placement — helping you find work that values your experience and talents.",
     features: [
-      "Resume and cover letter writing",
-      "Interview preparation coaching",
-      "Job search strategies and resources",
-      "Networking opportunities",
-      "Connection with employers",
+      "Resume and cover letter writing support",
+      "Interview coaching and practice sessions",
+      "Job search strategies for the Canadian market",
+      "Networking events and employer connections",
+      "Career planning and professional development",
     ],
   },
 ];
@@ -95,11 +95,11 @@ const Services = () => {
               Our Services
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Comprehensive Support for Your Journey
+              Real Support for Real People
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From your first day to lasting success, we provide a full range of services designed 
-              to help you build a new life with confidence and dignity.
+              From your first day in Canada to long-term success, we offer practical, compassionate 
+              services designed to help you and your family build a life with confidence and dignity.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Services = () => {
                 style={{ animationDelay: `${index * 100}ms`, animationFillMode: "forwards" }}
               >
                 <div className="grid lg:grid-cols-5 gap-0">
-                  {/* Left side - icon and title */}
+                  {/* Left side */}
                   <div className="lg:col-span-2 bg-primary/5 p-8 lg:p-12 flex flex-col justify-center">
                     <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
                       <service.icon className="w-8 h-8 text-primary" />
@@ -129,12 +129,12 @@ const Services = () => {
                     </p>
                   </div>
 
-                  {/* Right side - details */}
+                  {/* Right side */}
                   <div className="lg:col-span-3 p-8 lg:p-12">
                     <p className="text-muted-foreground leading-relaxed mb-6">
                       {service.fullDesc}
                     </p>
-                    <h3 className="font-semibold text-foreground mb-4">What We Offer:</h3>
+                    <h3 className="font-semibold text-foreground mb-4">What You Can Expect:</h3>
                     <ul className="space-y-3 mb-6">
                       {service.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-3">
@@ -162,16 +162,16 @@ const Services = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
-              Need Help Getting Started?
+              Not Sure Where to Start?
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
-              Our team is here to guide you through our services and help you find the support you need. 
-              Reach out today for a free consultation.
+              That's completely okay. Reach out and we'll help you figure out which services are 
+              right for you — no pressure, no judgment, just a friendly conversation.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="warm" size="xl" asChild>
                 <Link to="/contact">
-                  Contact Us Today
+                  Talk to Us Today
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

@@ -1,32 +1,37 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Home, BookOpen, Users, FileText, Heart } from "lucide-react";
+import { ArrowRight, Home, BookOpen, Users, FileText, Heart, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
   {
     icon: Home,
-    title: "Settlement Assistance",
-    description: "Housing support, orientation, and essential resources to help you establish your new home.",
+    title: "Settlement & Orientation",
+    description: "Find your footing with housing support, local orientation, and help navigating everyday essentials in your new community.",
+  },
+  {
+    icon: Briefcase,
+    title: "Employment & Education",
+    description: "Build your career with resume help, job search support, skills training, and credential recognition guidance.",
   },
   {
     icon: BookOpen,
     title: "Language & Skills Training",
-    description: "Language classes and vocational training to boost your confidence and career prospects.",
+    description: "Grow your confidence with English classes at every level, computer literacy programs, and workplace language coaching.",
   },
   {
     icon: Users,
     title: "Community Integration",
-    description: "Cultural programs and community events that help you build meaningful connections.",
+    description: "Connect with your neighbours through cultural events, mentorship programs, and activities that bring people together.",
   },
   {
     icon: FileText,
     title: "Legal & Documentation",
-    description: "Guidance with immigration paperwork, legal rights, and documentation processes.",
+    description: "Get guidance with immigration paperwork, understand your rights, and access referrals to trusted legal professionals.",
   },
   {
     icon: Heart,
-    title: "Mental Health Support",
-    description: "Counseling services and wellness programs to support your emotional wellbeing.",
+    title: "Wellness & Mental Health",
+    description: "Access counseling, support groups, and wellness programs designed to help you heal, grow, and feel supported.",
   },
 ];
 
@@ -40,15 +45,16 @@ export function ServicesSection() {
               How We Help
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Comprehensive Support Services
+              Support That Meets You Where You Are
             </h2>
             <p className="text-lg text-muted-foreground">
-              From your first day to lasting success, we provide the resources and guidance you need at every step.
+              From your first day in Canada to long-term success, we're here with practical help 
+              and genuine care at every step of your journey.
             </p>
           </div>
           <Button variant="outline" size="lg" asChild>
             <Link to="/services">
-              View All Services
+              Explore All Services
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>

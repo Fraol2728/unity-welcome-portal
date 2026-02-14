@@ -10,11 +10,11 @@ const navigation = {
     { name: "Contact", href: "/contact" },
   ],
   services: [
-    { name: "Settlement Assistance", href: "/services" },
-    { name: "Language Training", href: "/services" },
-    { name: "Community Programs", href: "/services" },
-    { name: "Legal Support", href: "/services" },
-    { name: "Mental Health", href: "/services" },
+    { name: "Settlement & Orientation", href: "/services" },
+    { name: "Language & Skills Training", href: "/services" },
+    { name: "Community Integration", href: "/services" },
+    { name: "Employment & Careers", href: "/services" },
+    { name: "Wellness & Mental Health", href: "/services" },
   ],
   social: [
     { name: "Facebook", icon: Facebook, href: "#" },
@@ -41,7 +41,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
-              Empowering refugees, immigrants, and vulnerable communities to build new lives with dignity and hope.
+              Empowering newcomers and multicultural communities to thrive in Canada with dignity, pride, and belonging.
             </p>
             <div className="flex gap-4">
               {navigation.social.map((item) => (
