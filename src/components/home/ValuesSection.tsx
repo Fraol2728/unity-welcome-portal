@@ -1,35 +1,30 @@
-import { Heart, Users, Handshake, Smile, Scale, Building2 } from "lucide-react";
+import { Heart, Users, Handshake, Sparkles, Scale, PartyPopper } from "lucide-react";
 
 const values = [
   {
     icon: Heart,
-    title: "Inclusivity",
-    description: "Embracing diversity and ensuring everyone feels welcomed, valued, and represented.",
-  },
-  {
-    icon: Users,
-    title: "Empowerment",
-    description: "Enabling individuals to achieve self-sufficiency and take control of their futures.",
-  },
-  {
-    icon: Handshake,
-    title: "Collaboration",
-    description: "Working together with communities, partners, and stakeholders to maximize impact.",
-  },
-  {
-    icon: Smile,
-    title: "Compassion",
-    description: "Leading with empathy and understanding in every interaction and service we provide.",
+    title: "Inclusion",
+    description: "Everyone belongs here. We create spaces where all cultures, identities, and voices are welcomed and valued.",
   },
   {
     icon: Scale,
     title: "Equity",
-    description: "Promoting fairness and ensuring equal access to opportunities for all.",
+    description: "Fair access for all. We work to remove barriers so every person has the opportunity to succeed.",
   },
   {
-    icon: Building2,
-    title: "Community Building",
-    description: "Creating connections that transform strangers into neighbors and neighbors into family.",
+    icon: Handshake,
+    title: "Collaboration",
+    description: "Stronger together. We partner with communities, organizations, and leaders to multiply our impact.",
+  },
+  {
+    icon: Sparkles,
+    title: "Youth Empowerment",
+    description: "Investing in tomorrow. We equip young people with the skills, confidence, and connections to lead.",
+  },
+  {
+    icon: PartyPopper,
+    title: "Cultural Celebration",
+    description: "Diversity is our strength. We honour the traditions, languages, and stories that make our community vibrant.",
   },
 ];
 
@@ -39,14 +34,14 @@ export function ValuesSection() {
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-            Our Core Values
+            What We Stand For
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Principles That Guide Everything We Do
+            Values That Shape Everything We Do
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our values shape our approach to serving newcomers and building an inclusive, 
-            compassionate community where everyone can thrive.
+            These aren't just words on a page — they guide every program we build, 
+            every conversation we have, and every community we serve.
           </p>
         </div>
 

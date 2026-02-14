@@ -15,22 +15,22 @@ export function BoardAnnouncementSection() {
             <div className="flex-1 text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/20 text-sm font-medium text-foreground mb-4">
                 <CalendarDays className="w-4 h-4" />
-                Upcoming Meeting
+                Upcoming Event
               </span>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                Meet Our Amazing Board Members
+                Meet the People Behind Our Mission
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                We are excited to introduce our amazing Board Members! A meeting is scheduled on{" "}
-                <strong className="text-foreground">February 3rd at 9:00 AM</strong> to discuss 
-                the company logo and future plans. We invite all stakeholders to join us in shaping 
-                our vision together.
+                We're proud to introduce our dedicated Board Members! Join us on{" "}
+                <strong className="text-foreground">February 3rd at 9:00 AM</strong> as we 
+                discuss our evolving identity, community vision, and plans for the future. 
+                All community members and partners are welcome.
               </p>
             </div>
 
             <Button variant="outline" size="lg" className="border-foreground/30 hover:bg-foreground/10" asChild>
               <Link to="/about">
-                Learn More
+                Meet the Board
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

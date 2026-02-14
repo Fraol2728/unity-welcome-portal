@@ -50,7 +50,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="warm" size="lg" asChild>
-              <Link to="/contact">Donate Now</Link>
+              <Link to="/contact">Support Us</Link>
             </Button>
           </div>
 
@@ -88,7 +88,7 @@ export function Header() {
               ))}
               <Button variant="warm" className="mt-4" asChild>
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                  Donate Now
+                  Support Us
                 </Link>
               </Button>
             </div>

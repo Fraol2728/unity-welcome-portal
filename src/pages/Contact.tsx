@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Office Hours",
-    details: ["Monday - Friday: 9am - 6pm", "Saturday: 10am - 2pm"],
+    details: ["Monday – Friday: 9am – 6pm", "Saturday: 10am – 2pm"],
   },
 ];
 
@@ -48,7 +48,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
+      description: "Thank you for reaching out. We'll get back to you within 24–48 hours.",
     });
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -64,14 +64,14 @@ const Contact = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-              Get In Touch
+              We'd Love to Hear From You
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              We Are Here to Help
+              You're Not Alone — Let's Talk
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Whether you need support, want to volunteer, or have questions about our services, 
-              we would love to hear from you. Reach out and let us know how we can help.
+              Whether you're looking for support, want to volunteer, or just have a question — 
+              we're here and happy to help. No question is too small, and there's never any pressure.
             </p>
           </div>
         </div>
@@ -84,9 +84,12 @@ const Contact = () => {
             {/* Form */}
             <div className="lg:col-span-3">
               <div className="bg-card border border-border rounded-2xl p-8 md:p-10">
-                <h2 className="font-display text-2xl font-bold text-foreground mb-6">
+                <h2 className="font-display text-2xl font-bold text-foreground mb-2">
                   Send Us a Message
                 </h2>
+                <p className="text-muted-foreground mb-6">
+                  Fill out the form below and we'll get back to you as soon as we can. We read every message.
+                </p>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
@@ -138,7 +141,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                        Subject *
+                        How Can We Help? *
                       </label>
                       <select
                         id="subject"
@@ -149,19 +152,19 @@ const Contact = () => {
                         className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select a topic</option>
-                        <option value="services">Service Inquiry</option>
-                        <option value="volunteer">Volunteer Opportunity</option>
-                        <option value="donate">Donation Question</option>
-                        <option value="partnership">Partnership Proposal</option>
-                        <option value="media">Media Inquiry</option>
-                        <option value="other">Other</option>
+                        <option value="services">I need help with services</option>
+                        <option value="volunteer">I'd like to volunteer</option>
+                        <option value="donate">I'd like to support your work</option>
+                        <option value="partnership">Partnership opportunity</option>
+                        <option value="media">Media inquiry</option>
+                        <option value="other">Something else</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message *
+                      Your Message *
                     </label>
                     <textarea
                       id="message"
@@ -171,7 +174,7 @@ const Contact = () => {
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                      placeholder="Tell us how we can help..."
+                      placeholder="Tell us what's on your mind — we're listening..."
                     />
                   </div>
 
@@ -206,9 +209,9 @@ const Contact = () => {
 
               {/* Social Links */}
               <div className="bg-primary rounded-2xl p-6">
-                <h3 className="font-semibold text-primary-foreground mb-4">Follow Us</h3>
+                <h3 className="font-semibold text-primary-foreground mb-4">Connect With Us</h3>
                 <p className="text-sm text-primary-foreground/80 mb-4">
-                  Stay connected and join our community on social media.
+                  Follow along for community stories, event updates, and ways to get involved.
                 </p>
                 <div className="flex gap-3">
                   {socialLinks.map((social) => (
@@ -216,7 +219,7 @@ const Contact = () => {
                       key={social.name}
                       href={social.href}
                       className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
-                      aria-label={social.name}
+                      aria-label={`Follow us on ${social.name}`}
                     >
                       <social.icon className="w-5 h-5 text-primary-foreground" />
                     </a>
@@ -233,10 +236,10 @@ const Contact = () => {
         <div className="container-custom">
           <div className="text-center mb-8">
             <h2 className="font-display text-2xl font-bold text-foreground mb-2">
-              Find Our Community Center
+              Come Say Hello
             </h2>
             <p className="text-muted-foreground">
-              We are located in the heart of Toronto, easily accessible by public transit.
+              Our community centre is in the heart of Toronto, easily accessible by public transit. Drop by anytime during office hours.
             </p>
           </div>
           <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden bg-muted">
@@ -248,7 +251,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Unity Settlement Welcome Agency Location"
+              title="Unity Settlement Welcome Agency Location in Toronto"
             />
           </div>
         </div>

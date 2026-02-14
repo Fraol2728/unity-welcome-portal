@@ -1,53 +1,52 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Eye, Scroll, Heart, Users, Handshake, Smile, Scale, Building2, Goal, Quote } from "lucide-react";
+import { ArrowRight, Target, Eye, Scroll, Heart, Users, Handshake, Sparkles, Scale, PartyPopper, Goal, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teamPhoto from "@/assets/team-photo.jpg";
 
 const values = [
-  { icon: Heart, title: "Inclusivity", description: "Embracing diversity and ensuring everyone feels welcomed, valued, and represented in our community." },
-  { icon: Users, title: "Empowerment", description: "Enabling individuals to achieve self-sufficiency and take control of their futures with confidence." },
-  { icon: Handshake, title: "Collaboration", description: "Working together with communities, partners, and stakeholders to maximize our collective impact." },
-  { icon: Smile, title: "Compassion", description: "Leading with empathy and understanding in every interaction and service we provide." },
-  { icon: Scale, title: "Equity", description: "Promoting fairness and ensuring equal access to opportunities and resources for all." },
-  { icon: Building2, title: "Community Building", description: "Creating connections that transform strangers into neighbors and neighbors into family." },
+  { icon: Heart, title: "Inclusion", description: "Everyone belongs. We create welcoming spaces where all cultures, identities, and backgrounds are respected and celebrated." },
+  { icon: Scale, title: "Equity", description: "Fair access for all. We actively work to remove barriers so every person has the opportunity to succeed and contribute." },
+  { icon: Handshake, title: "Collaboration", description: "Better together. We partner with communities, organizations, and governments to create solutions that truly work." },
+  { icon: Sparkles, title: "Youth Empowerment", description: "Investing in the next generation. We equip young people with confidence, skills, and mentorship to become community leaders." },
+  { icon: PartyPopper, title: "Cultural Celebration", description: "Diversity makes us stronger. We honour the traditions, languages, and stories that enrich our shared Canadian identity." },
 ];
 
 const boardMembers = [
   {
     name: "Dr. Amara Johnson",
     role: "Board Chair",
-    bio: "Dr. Johnson brings 25 years of experience in humanitarian development and policy advocacy. Her vision guides our strategic direction.",
+    bio: "With 25 years in humanitarian development and policy advocacy, Dr. Johnson brings deep expertise and a passionate commitment to inclusive community building.",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
   },
   {
     name: "Marcus Chen",
     role: "Vice Chair",
-    bio: "With expertise in community development and nonprofit management, Marcus ensures our programs align with our mission.",
+    bio: "Marcus's background in community development and nonprofit leadership ensures our programs stay grounded in the real needs of the people we serve.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
   },
   {
     name: "Fatima Al-Hassan",
     role: "Secretary",
-    bio: "A former refugee herself, Fatima brings invaluable lived experience and a deep understanding of newcomer challenges.",
+    bio: "A former newcomer herself, Fatima brings invaluable lived experience and a deep understanding of the challenges and hopes that newcomers carry with them.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
   },
   {
     name: "David Okonkwo",
     role: "Treasurer",
-    bio: "David's financial expertise in the nonprofit sector ensures our resources are managed with integrity and transparency.",
+    bio: "David's financial expertise in the nonprofit sector ensures our resources are managed with integrity, transparency, and maximum community impact.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
   },
   {
     name: "Sofia Martinez",
     role: "Board Member",
-    bio: "Sofia specializes in education and skills development, helping shape our training and employment programs.",
+    bio: "Sofia brings expertise in education and skills development, shaping programs that open real doors for newcomers entering the Canadian workforce.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
   },
   {
     name: "Dr. James Adeyemi",
     role: "Board Member",
-    bio: "A mental health professional, Dr. Adeyemi oversees our wellness initiatives and trauma-informed care approaches.",
+    bio: "A mental health professional, Dr. Adeyemi ensures our wellness programs are culturally responsive and centred on healing, resilience, and dignity.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
   },
 ];
@@ -63,11 +62,12 @@ const About = () => {
               About Us
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Building an Inclusive, Compassionate Community
+              Building a Canada Where Everyone Belongs
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Unity Settlement Welcome Agency is dedicated to empowering refugees, immigrants, and 
-              vulnerable communities to build new lives with dignity, opportunity, and a true sense of belonging.
+              Unity Settlement Welcome Agency stands with newcomers, multicultural communities, 
+              and youth — providing the support, connection, and opportunities needed to thrive 
+              in Canada with dignity and pride.
             </p>
           </div>
         </div>
@@ -79,9 +79,9 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="w-12 h-12 text-secondary mx-auto mb-6 opacity-60" />
             <blockquote className="font-display text-2xl sm:text-3xl font-medium text-primary-foreground leading-relaxed mb-6">
-              "At Unity Settlement, we believe that every person deserves a welcoming community, 
-              access to opportunity, and the support to thrive. Together, we are building bridges 
-              that connect cultures, create hope, and transform lives."
+              "We believe that when communities come together — when we celebrate what makes us 
+              different and invest in what connects us — everyone is better for it. That's the 
+              Canada we're building, one person, one family, one neighbourhood at a time."
             </blockquote>
             <p className="text-secondary font-medium">— The Unity Settlement Leadership Team</p>
           </div>
@@ -100,10 +100,10 @@ const About = () => {
                 <div>
                   <h2 className="font-display text-2xl font-bold text-foreground mb-3">Our Vision</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    A world where every newcomer—regardless of their origin—finds a welcoming community, 
-                    access to essential services, and the opportunity to build a safe, dignified, and 
-                    fulfilling life. We envision inclusive societies that embrace diversity as their 
-                    greatest strength and welcome newcomers as valued members.
+                    A united and inclusive Canada where diverse communities thrive together with 
+                    dignity and respect. We see a future where every newcomer feels at home, 
+                    every culture is celebrated, and every person has the chance to contribute 
+                    to something greater than themselves.
                   </p>
                 </div>
               </div>
@@ -115,10 +115,10 @@ const About = () => {
                 <div>
                   <h2 className="font-display text-2xl font-bold text-foreground mb-3">Our Mission</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To empower refugees, immigrants, and vulnerable individuals to achieve self-sufficiency 
-                    and integration through comprehensive settlement support, education, employment guidance, 
-                    legal assistance, and community-building programs. We believe that with the right support, 
-                    every person can thrive and contribute meaningfully to society.
+                    To empower and support multicultural communities in Canada through inclusion, 
+                    cultural pride, equal opportunity, and meaningful engagement. We walk alongside 
+                    newcomers, youth, and families — helping them build confidence, connections, 
+                    and the skills they need to thrive.
                   </p>
                 </div>
               </div>
@@ -130,10 +130,9 @@ const About = () => {
                 <div>
                   <h2 className="font-display text-2xl font-bold text-foreground mb-3">Our Goal</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To create lasting positive change in the lives of newcomers by providing holistic, 
-                    culturally-sensitive services that address their unique needs. We aim to help every 
-                    individual we serve achieve independence, build meaningful connections, and fully 
-                    participate in Canadian society.
+                    To create lasting, positive change by delivering programs that truly meet people 
+                    where they are. We help individuals and families build independence, form meaningful 
+                    relationships, and fully participate in the rich fabric of Canadian life.
                   </p>
                 </div>
               </div>
@@ -145,10 +144,10 @@ const About = () => {
                 <div>
                   <h2 className="font-display text-2xl font-bold text-foreground mb-3">Our Mandate</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To provide holistic, culturally-sensitive services that address the unique needs of 
-                    newcomers to Canada. We advocate for policies that promote equity and inclusion, 
-                    partner with communities and organizations, and work tirelessly to ensure that every 
-                    person we serve receives the support they need to succeed.
+                    To deliver culturally-responsive services that address the real needs of newcomers 
+                    and multicultural communities. We advocate for equity and inclusion, partner with 
+                    community organizations, and work tirelessly to ensure everyone we serve receives 
+                    the care and support they deserve.
                   </p>
                 </div>
               </div>
@@ -157,12 +156,12 @@ const About = () => {
             <div className="relative">
               <img
                 src={teamPhoto}
-                alt="Unity Settlement team members working together"
+                alt="Unity Settlement team members collaborating together"
                 className="rounded-2xl shadow-xl w-full"
               />
               <div className="absolute -bottom-6 -left-6 bg-card rounded-2xl shadow-lg p-6">
                 <div className="text-4xl font-display font-bold text-primary">5,000+</div>
-                <div className="text-sm text-muted-foreground">Lives Impacted Annually</div>
+                <div className="text-sm text-muted-foreground">Lives Touched Every Year</div>
               </div>
             </div>
           </div>
@@ -174,13 +173,13 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-              Our Core Values
+              What We Stand For
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Principles That Guide Our Work
+              Values That Drive Our Work
             </h2>
             <p className="text-lg text-muted-foreground">
-              These values shape every decision we make and every service we provide.
+              These aren't just principles — they're promises we make to every person and community we serve.
             </p>
           </div>
 
@@ -207,19 +206,19 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary font-medium text-sm mb-4">
-              Leadership
+              Our Leadership
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Meet Our Board Members
+              The People Behind Our Mission
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Our dedicated board members bring diverse expertise and a shared commitment to 
-              empowering newcomers and building inclusive communities.
+              Our board members bring diverse expertise, lived experience, and a shared commitment 
+              to building inclusive communities where newcomers and multicultural families can thrive.
             </p>
             <div className="bg-warm-gradient rounded-2xl p-6 max-w-2xl mx-auto">
               <p className="text-foreground font-medium">
-                📅 <strong>Upcoming Meeting:</strong> February 3rd at 9:00 AM — Join us to discuss 
-                the company logo and future plans!
+                📅 <strong>Upcoming Meeting:</strong> February 3rd at 9:00 AM — Join us as we 
+                discuss our evolving identity and plans for the future!
               </p>
             </div>
           </div>
@@ -233,7 +232,7 @@ const About = () => {
               >
                 <img
                   src={member.image}
-                  alt={member.name}
+                  alt={`${member.name}, ${member.role}`}
                   className="w-full aspect-square object-cover"
                 />
                 <div className="p-6">
@@ -252,11 +251,11 @@ const About = () => {
         <div className="container-custom">
           <div className="bg-primary rounded-3xl px-8 py-16 md:px-16 text-center">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
-              Ready to Make an Impact?
+              Ready to Make a Difference?
             </h2>
             <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-              Whether you want to volunteer, donate, or partner with us, your support can change lives 
-              and help build a more inclusive community.
+              Whether you want to volunteer your time, contribute resources, or partner with us — 
+              your support helps build a more welcoming Canada for everyone.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="warm" size="xl" asChild>
@@ -266,7 +265,7 @@ const About = () => {
                 </Link>
               </Button>
               <Button variant="hero-outline" size="xl" asChild>
-                <Link to="/services">Our Services</Link>
+                <Link to="/services">Explore Our Services</Link>
               </Button>
             </div>
           </div>
